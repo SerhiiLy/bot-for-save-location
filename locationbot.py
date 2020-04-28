@@ -6,7 +6,7 @@ import telebot
 
 import redis
 from telebot import types
-token = os.getenv('TOKEN')
+token = '1239132956:AAHEQwQ5_HxYi5MhHSGpHaIC_LOMYCd0bUQ'
 
 bot = telebot.TeleBot(token)
 

@@ -10,16 +10,16 @@ token = '1239132956:AAHEQwQ5_HxYi5MhHSGpHaIC_LOMYCd0bUQ'
 
 bot = telebot.TeleBot(token)
 
-redis_url = os.getenv('REDIS_URL', 'redis://localhost:6379')
+redis_url = os.getenv('REDIS_URL', 'redis://h:p28f165da398e4b03eecb12330946fdae9d3556576beac98003a90014ffb7655e@ec2-52-213-23-142.eu-west-1.compute.amazonaws.com:24909')
 
-r = redis.Redis(
-    host='localhost',
-    port=6379,
-    db=0,
-    decode_responses=True
-)
+# r = redis.Redis(
+#     host='localhost',
+#     port=6379,
+#     db=0,
+#     decode_responses=True
+# )
 
-# r = redis.from_url(redis_url, db=0, decode_responses=True)
+r = redis.from_url(redis_url, db=0, decode_responses=True)
 
 START, ADD_NAME, ADD_LOCATION, CONFIRMATION = range(4)
 
